@@ -1,4 +1,4 @@
-def getNextiArr(arr, *num):
+def getNextArr(arr, *num):
     newArr = []
     for i in arr:
         isNeed = True
@@ -13,14 +13,14 @@ def getNextiArr(arr, *num):
 def main():
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     for i1 in arr:
-        for i2 in getNextiArr(arr, i1):
-            for i3 in getNextiArr(arr, i1, i2):
-                for i4 in getNextiArr(arr, i1, i2, i3):
-                    for i5 in getNextiArr(arr, i1, i2, i3, i4):
-                        for i6 in getNextiArr(arr, i1, i2, i3, i4, i5):
-                            for i7 in getNextiArr(arr, i1, i2, i3, i4, i5, i6):
-                                for i8 in getNextiArr(arr, i1, i2, i3, i4, i5, i6, i7):
-                                    i9 = getNextiArr(arr, i1, i2, i3, i4, i5, i6, i7, i8)[0]
+        for i2 in getNextArr(arr, i1):
+            for i3 in getNextArr(arr, i1, i2):
+                for i4 in getNextArr(arr, i1, i2, i3):
+                    for i5 in getNextArr(arr, i1, i2, i3, i4):
+                        for i6 in getNextArr(arr, i1, i2, i3, i4, i5):
+                            for i7 in getNextArr(arr, i1, i2, i3, i4, i5, i6):
+                                for i8 in getNextArr(arr, i1, i2, i3, i4, i5, i6, i7):
+                                    i9 = getNextArr(arr, i1, i2, i3, i4, i5, i6, i7, i8)[0]
                                     num1 = i1 * 1000 + i2 * 100 + i3 * 10 + i4
                                     num2 = i5
                                     result = i6 * 1000 + i7 * 100 + i8 * 10 + i9
