@@ -35,7 +35,13 @@ for i1 in ${arr1[*]}; do
 									num1=$((i1*1000 + i2*100 + i3*10 + i4))
 									num2=$i5
 									result=$((i6*1000 + i7*100 + i8*10 + i9))
+									if [[ $((num1*num2)) -eq $result ]]; then
+										echo "$num1 * $num2 = $result"
+									fi
 
+									num1=$((i1*10 + i2))
+									num2=$((i3*100 + i4*10 + i5))
+									result=$((i6*1000 + i7*100 + i8*10 + i9))
 									if [[ $((num1*num2)) -eq $result ]]; then
 										echo "$num1 * $num2 = $result"
 									fi

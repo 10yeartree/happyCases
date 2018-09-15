@@ -27,5 +27,11 @@ def main():
                                         if num1 * num2 == result:
                                             print '%d * %d = %d' % (num1, num2, result)
 
+                                        num1 = i1 * 10 + i2
+                                        num2 = i3 * 100 + i4 * 10 + i5
+                                        result = i6 * 1000 + i7 * 100 + i8 * 10 + i9
+                                        if num1 * num2 == result:
+                                            print '%d * %d = %d' % (num1, num2, result)
+                                    
 if "__main__" == __name__:
     main()
