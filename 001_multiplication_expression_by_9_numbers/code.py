@@ -20,12 +20,12 @@ def main():
                         for i6 in getNextArr(arr, i1, i2, i3, i4, i5):
                             for i7 in getNextArr(arr, i1, i2, i3, i4, i5, i6):
                                 for i8 in getNextArr(arr, i1, i2, i3, i4, i5, i6, i7):
-                                    i9 = getNextArr(arr, i1, i2, i3, i4, i5, i6, i7, i8)[0]
-                                    num1 = i1 * 1000 + i2 * 100 + i3 * 10 + i4
-                                    num2 = i5
-                                    result = i6 * 1000 + i7 * 100 + i8 * 10 + i9
-                                    if num1 * num2 == result:
-                                        print '%d * %d = %d' % (num1, num2, result)
+                                    for i9 in getNextArr(arr, i1, i2, i3, i4, i5, i6, i7, i8):
+                                        num1 = i1 * 1000 + i2 * 100 + i3 * 10 + i4
+                                        num2 = i5
+                                        result = i6 * 1000 + i7 * 100 + i8 * 10 + i9
+                                        if num1 * num2 == result:
+                                            print '%d * %d = %d' % (num1, num2, result)
 
 if "__main__" == __name__:
     main()
